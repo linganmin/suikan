@@ -1,0 +1,15 @@
+services:
+  php-fpm:
+    image: registry.cn-hangzhou.aliyuncs.com/lanni-base/php-fpm:7.4.33
+    volumes:
+      - ./:/opt/app
+
+  nginx:
+      image: nginx:latest
+      ports:
+        - 8080:80
+      links:
+        - php-fpm
+      volumes:
+        - .deploy/nginx.conf:/etc/nginx/conf.d/videos.conf
+        - ./:/opt/app

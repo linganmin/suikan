@@ -10,6 +10,8 @@ header('Content-Type:text/html;charset=utf-8');
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.5.0','<'))  die('PHP版本需要>=5.5，请升级【PHP version requires > = 5.5，please upgrade】');
 //超时时间
+//error_reporting(E_ALL);
+ini_set('display_errors', 1);
 @ini_set('max_execution_time', '0');
 //内存限制 取消内存限制
 @ini_set("memory_limit",'-1');

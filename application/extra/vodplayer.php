@@ -87,4 +87,30 @@ return array (
     'tip' => '无需安装任何插件	',
     'id' => 'flv',
   ),
+  'tpiframe' => 
+  array (
+    'status' => 1,
+    'from' => 'tpiframe',
+    'show' => 'tpiframe',
+    'des' => '',
+    'target' => '_self',
+    'ps' => 0,
+    'parse' => '',
+    'sort' => 102,
+    'tip' => '',
+    'id' => 'tpiframe',
+  ),
+  'tpm3u8' => 
+  array (
+    'status' => 1,
+    'from' => 'tpm3u8',
+    'show' => 'tpm3u8',
+    'des' => '',
+    'target' => '_self',
+    'ps' => 0,
+    'parse' => '',
+    'sort' => 102,
+    'tip' => '',
+    'id' => 'tpm3u8',
+  ),
 );
