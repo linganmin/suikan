@@ -14,3 +14,5 @@ nohup*
 .well-known
 /upload
 node_modules/
+vodhtml
+vodplayhtml
