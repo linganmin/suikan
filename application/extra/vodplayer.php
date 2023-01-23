@@ -113,4 +113,30 @@ return array (
     'tip' => '',
     'id' => 'tpm3u8',
   ),
+  'tkyun' => 
+  array (
+    'status' => '1',
+    'from' => 'tkyun',
+    'show' => '天空云',
+    'des' => '在线播放',
+    'target' => '_self',
+    'ps' => '0',
+    'parse' => '',
+    'sort' => '991',
+    'tip' => '',
+    'id' => 'tkyun',
+  ),
+  'tkm3u8' => 
+  array (
+    'status' => '1',
+    'from' => 'tkm3u8',
+    'show' => '天空M3U8',
+    'des' => '',
+    'target' => '_self',
+    'ps' => '1',
+    'parse' => 'https://jx.huishij.com/yun/?url=',
+    'sort' => '990',
+    'tip' => '',
+    'id' => 'tkm3u8',
+  ),
 );

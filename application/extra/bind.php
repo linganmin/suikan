@@ -51,4 +51,8 @@ return array (
   'bfe3ee93fb2c0bfe6371e81055b6beb9_3' => 22,
   'bfe3ee93fb2c0bfe6371e81055b6beb9_6' => 21,
   'bfe3ee93fb2c0bfe6371e81055b6beb9_13' => 20,
+  'd3d8c82a211bbd1749a1f63e87aaf598_1' => 21,
+  'd3d8c82a211bbd1749a1f63e87aaf598_3' => 20,
+  'd3d8c82a211bbd1749a1f63e87aaf598_22' => 20,
+  'fceef6250232feb7d277b162be0ddc2c_22' => 20,
 );
