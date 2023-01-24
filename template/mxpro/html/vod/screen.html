@@ -122,13 +122,12 @@
 					</div>
 					{/if}
 						{/if}
-					
-					
-									
+
+
                 		{if condition="$mxprost['mxprocms']['s4']['showzm'] eq 1"}
 					<div class="module-class-items scroll-box">
 						<div class="module-class-item scroll-content">
-							<div class="module-item-title">字母<i class="icon-arrow"></i></div>
+							<div class="module-item-title">字母111<i class="icon-arrow"></i></div>
 							<div class="module-item-box">
 								<a href="{:mac_url_type($obj,['area'=>$param['area'],'lang'=>$param['lang'],'year'=>$param['year'],'level'=>$param['level'],'letter'=>'','state'=>$param['state'],'tag'=>$param['tag'],'class'=>$param['class'],'order'=>$param['order'],'by'=>$param['by'] ],'show')}" {if condition="$param['letter'] eq ''"}class="active"{/if}>字母</a>
 							 {maccms:foreach name=":explode(',','A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,0-9')" id="vo2" key="key2"}
