@@ -33,7 +33,16 @@ return array (
     'mob_status' => '0',
     'mob_template_dir' => 'mxpro',
     'mob_html_dir' => 'html',
-    'site_tj' => '',
+    'site_tj' => '<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?660e5fa19554aa062fc9009d26e3bb88";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+',
     'site_status' => '1',
     'site_close_tip' => '站点暂时关闭，请稍后访问',
     'ads_dir' => 'ads',
