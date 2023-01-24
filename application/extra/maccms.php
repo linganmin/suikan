@@ -470,8 +470,8 @@ return array (
     'topic_index' => '0',
     'topic_detail' => '0',
     'vod_detail' => '2',
-    'vod_play' => '3',
-    'vod_down' => '3',
+    'vod_play' => '0',
+    'vod_down' => '0',
     'art_detail' => '0',
   ),
   'path' => 
