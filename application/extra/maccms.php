@@ -28,10 +28,10 @@ return array (
     'install_dir' => '/',
     'site_logo' => 'static/images/logo.jpg',
     'site_waplogo' => 'static/images/logo.jpg',
-    'template_dir' => 'mxpro',
+    'template_dir' => 'mxpro2',
     'html_dir' => 'html',
     'mob_status' => '0',
-    'mob_template_dir' => 'mxpro',
+    'mob_template_dir' => 'mxpro2',
     'mob_html_dir' => 'html',
     'site_tj' => '<script>
 var _hmt = _hmt || [];
