@@ -28,17 +28,17 @@
 							
 							<div class="header-op">
 								<div class="header-op-list">
-									<div class="drop">
-										<div class="header-op-list-btn header-op-history"><i class="icon icon-history-o"></i><span>观看记录</span></div>
-										<div class="drop-content drop-history">
-											<div class="drop-content-box">
-												<ul class="drop-content-items historical">
-													<li class="drop-item drop-item-title"><i class="icon icon-history"></i><strong>我的观影记录</strong></li>
-												</ul>
-											</div>
-										</div>
-										<div class="shortcuts-mobile-overlay"></div>
-									</div>
+<!--									<div class="drop">-->
+<!--										<div class="header-op-list-btn header-op-history"><i class="icon icon-history-o"></i><span>观看记录</span></div>-->
+<!--										<div class="drop-content drop-history">-->
+<!--											<div class="drop-content-box">-->
+<!--												<ul class="drop-content-items historical">-->
+<!--													<li class="drop-item drop-item-title"><i class="icon icon-history"></i><strong>我的观影记录</strong></li>-->
+<!--												</ul>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="shortcuts-mobile-overlay"></div>-->
+<!--									</div>-->
 									{if condition="$maccms.user_status eq 1"}
 									{if condition="$GLOBALS['user']['user_id']" gt 0}
 									<div class="member_group">
@@ -112,13 +112,13 @@
 								</li>
 								{/maccms:type}
 								<li class="navbar-hr"></li>
-								{if condition="$mxprost['mxprocms']['s2']['week'] eq 1"}
-								<li class="swiper-slide navbar-item  {if condition="$maccms.aid eq 9996"}active{/if}">
-									<a href="{:mac_url('label/week')}" class="links">
-									      {if condition="$maccms.aid eq 9996"}<div class="current"></div>{/if}
-									<i class="icon-arrow-go"></i><i class="icon icon-week-o"></i><span>追剧周表</span></a>
-								</li>
-								{/if}
+<!--								{if condition="$mxprost['mxprocms']['s2']['week'] eq 1"}-->
+<!--								<li class="swiper-slide navbar-item  {if condition="$maccms.aid eq 9996"}active{/if}">-->
+<!--									<a href="{:mac_url('label/week')}" class="links">-->
+<!--									      {if condition="$maccms.aid eq 9996"}<div class="current"></div>{/if}-->
+<!--									<i class="icon-arrow-go"></i><i class="icon icon-week-o"></i><span>追剧周表</span></a>-->
+<!--								</li>-->
+<!--								{/if}-->
 								{if condition="$mxprost['mxprocms']['s2']['todaynew'] eq 1"}
 								<li class="swiper-slide navbar-item  {if condition="$maccms.aid eq 9999"}active{/if}">
 									<a href="{:mac_url('label/new')}" class="links">
@@ -126,19 +126,19 @@
 									<i class="icon-arrow-go"></i><i class="icon icon-update-o"></i><span>今日更新</span><small>{:mac_data_count(0,'today','vod')}</small></a>
 								</li>
 								{/if}
-								{if condition="$mxprost['mxprocms']['s2']['navhot'] eq 1"}
-								<li class="swiper-slide navbar-item  {if condition="$maccms.aid eq 9998"}active{/if}">
-									<a href="{:mac_url('label/hot')}" class="links">
-									    	      {if condition="$maccms.aid eq 9998"}<div class="current"></div>{/if}
-									<i class="icon-arrow-go"></i><i class="icon icon-ranking-o"></i><span>热榜</span></a>
-								</li>
-								{/if}
-								{if condition="$mxprost['mxprocms']['s2']['app'] eq 1"}
-								<li class="swiper-slide navbar-item {if condition="$maccms.aid eq 9997"}active{/if}">
-									<a href="{$mxprost.mxprocms.s2.appurl}" class="links" 	{if condition="$mxprost['mxprocms']['s2']['target'] eq 1"}target="_blank"{/if}>
-									<i class="icon-arrow-go"></i><i class="icon {$mxprost.mxprocms.s2.appicon}"></i><span>{$mxprost.mxprocms.s2.appname}</span></a>
-								</li>
-								{/if}
+<!--								{if condition="$mxprost['mxprocms']['s2']['navhot'] eq 1"}-->
+<!--								<li class="swiper-slide navbar-item  {if condition="$maccms.aid eq 9998"}active{/if}">-->
+<!--									<a href="{:mac_url('label/hot')}" class="links">-->
+<!--									    	      {if condition="$maccms.aid eq 9998"}<div class="current"></div>{/if}-->
+<!--									<i class="icon-arrow-go"></i><i class="icon icon-ranking-o"></i><span>热榜</span></a>-->
+<!--								</li>-->
+<!--								{/if}-->
+<!--								{if condition="$mxprost['mxprocms']['s2']['app'] eq 1"}-->
+<!--								<li class="swiper-slide navbar-item {if condition="$maccms.aid eq 9997"}active{/if}">-->
+<!--									<a href="{$mxprost.mxprocms.s2.appurl}" class="links" 	{if condition="$mxprost['mxprocms']['s2']['target'] eq 1"}target="_blank"{/if}>-->
+<!--									<i class="icon-arrow-go"></i><i class="icon {$mxprost.mxprocms.s2.appicon}"></i><span>{$mxprost.mxprocms.s2.appname}</span></a>-->
+<!--								</li>-->
+<!--								{/if}-->
 								{if condition="$mxprost['mxprocms']['s2']['diy1'] eq 1"}
 								<li class="swiper-slide navbar-item">
 									<a href="{$mxprost.mxprocms.s2.diy1url}" class="links" target="_blank" title="{$mxprost.mxprocms.s2.diy1name}">
