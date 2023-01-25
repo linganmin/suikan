@@ -11,6 +11,7 @@ return array (
     'param' => 'ac=index',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
+    'runtime' => 1674627001,
   ),
   'gen_static_type' => 
   array (
@@ -22,7 +23,7 @@ return array (
     'param' => 'ac=type&tab=vod&vodtype=20,21,22,23,24',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
-    'runtime' => 1674566806,
+    'runtime' => 1674627002,
   ),
   'gen_static_detail' => 
   array (
@@ -35,7 +36,7 @@ return array (
     'param' => 'ac=info&tab=vod&ac2=nomake',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
-    'runtime' => 1674569219,
+    'runtime' => 1674627004,
   ),
   'collect_8' => 
   array (
@@ -48,6 +49,7 @@ return array (
     'param' => 'ac=cj&cjflag=992ae5cbb1c5c2b16e7d2858d94a9384&cjurl=https%3A%2F%2Fapi.1080zyku.com%2Finc%2Fapi_mac10.php&h=24&t=&ids=&wd=&type=2&mid=1&opt=0&sync_pic_opt=0&filter=0&filter_from=&param=',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '03,09,16,20,21',
+    'runtime' => 1674609085,
   ),
   'collect_7' => 
   array (
@@ -60,10 +62,12 @@ return array (
     'param' => 'ac=cj&cjflag=6c4b9deb0102572741f5169070ce1b56&cjurl=https%3A%2F%2Fapi.apibdzy.com%2Fapi.php%2Fprovide%2Fvod%2F%3Fac%3Dlist&h=24&t=&ids=&wd=&type=2&mid=1&opt=0&sync_pic_opt=0&filter=0&filter_from=&param=',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '02,07,12,21',
+    'runtime' => 1674619885,
   ),
   'collect_4' => 
   array (
-    '__token__' => '71389ecfc447f6acb25be932df4439df',
+    'id' => 'collect_4',
+    '__token__' => 'f9f9d86353b47d3ab8ea4d16267b172c',
     'status' => '1',
     'name' => 'collect_4',
     'des' => '当日采集4',
@@ -71,5 +75,6 @@ return array (
     'param' => 'ac=cj&cjflag=fceef6250232feb7d277b162be0ddc2c&cjurl=https%3A%2F%2Fapi.tiankongapi.com%2Fapi.php%2Fprovide%2Fvod%2Ffrom%2Ftkm3u8%2Fat%2Fxml%2F&h=24&t=&ids=&wd=&type=1&mid=1&opt=0&sync_pic_opt=1&filter=0&filter_from=&param=',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '02,06,14,20,21,23',
+    'runtime' => 1674627006,
   ),
 );
