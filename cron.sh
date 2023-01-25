@@ -23,5 +23,17 @@ curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.
 
 echo "\r\n"
 
+curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?name=collect_9'
+
+echo "\r\n"
+
+curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?name=collect_10'
+
+echo "\r\n"
+
+curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?name=collect_11'
+
+echo "\r\n"
+
 
 
