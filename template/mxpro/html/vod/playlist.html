@@ -20,7 +20,7 @@
 							<div class="module-play-list">
 								<div class="module-play-list-content {if condition="$obj.type_id_1 eq 3||$obj.type_id eq 3 or $obj.type_id_1 eq 1||$obj.type_id eq 1"} module-play-list-larger {else} module-play-list-base{/if}">
 								     {maccms:foreach name="vo.urls" id="vo2" key="key2" } 
-                                     <a  class="module-play-list-link" href="{:mac_url_vod_play($obj,['sid'=>$vo.sid,'nid'=>$vo2.nid])}" title="播放{$obj.vod_name}{$vo2.name}"><span>{ if condition='$vo2.name eq ""'}正片{else}{$vo2.name}{/if}</span></a>
+                                     <a  class="module-play-list-link" href="{:mac_url_vod_play($obj,['sid'=>$vo.sid,'nid'=>$vo2.nid])}" title="播放{$obj.vod_name}{$vo2.name}"><span>{ if condition="$vo2.name eq ''"}正片{else}{$vo2.name}{/if}</span></a>
                                         {/maccms:foreach}      
 								</div>
 							</div>
