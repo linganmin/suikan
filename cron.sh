@@ -5,9 +5,6 @@ curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.
 echo "\r\n"
 
 curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?enforce=1&name=gen_static_type'
-echo "\r\n"
-
-curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?enforce=1&name=gen_static_detail'
 
 echo "\r\n"
 
@@ -35,5 +32,8 @@ curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.
 
 echo "\r\n"
 
+echo "\r\n"
+
+curl --request GET -sL --url 'https://suikan.linganmin.cn/api.php/timming/index.html?enforce=1&name=gen_static_detail'
 
 
