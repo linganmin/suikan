@@ -412,7 +412,8 @@ class Vod extends Base {
                 if(!empty($GLOBALS['config']['app']['search_vod_rule'])){
                     $role .= '|'.$GLOBALS['config']['app']['search_vod_rule'];
                 }
-                $where[$role] = ['like', '%' . $wd . '%'];
+                $where[$role] = ['like', $wd . '%'];
+//                $where[$role] = ['like', '%' . $wd . '%'];
                 if (count($search_id_list_tmp = $vod_search->getResultIdList($wd, $role)) <= $max_id_count) {
                     $search_id_list += $search_id_list_tmp;
                     unset($where[$role]);
@@ -464,7 +465,8 @@ class Vod extends Base {
                 if(!empty($GLOBALS['config']['app']['search_vod_rule'])){
                     $role .= '|'.$GLOBALS['config']['app']['search_vod_rule'];
                 }
-                $where[$role] = ['like', '%' . $wd . '%'];
+//                $where[$role] = ['like', '%' . $wd . '%'];
+                $where[$role] = ['like',  $wd . '%'];
             }
             if(!empty($name)) {
                 $where['vod_name'] = ['like',mac_like_arr($name),'OR'];
