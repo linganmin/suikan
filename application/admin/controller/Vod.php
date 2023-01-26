@@ -72,7 +72,8 @@ class Vod extends Base
         if(!empty($param['wd'])){
             $param['wd'] = urldecode($param['wd']);
             $param['wd'] = mac_filter_xss($param['wd']);
-            $where['vod_name|vod_actor|vod_sub'] = ['like','%'.$param['wd'].'%'];
+            $where['vod_name|vod_actor|vod_sub'] = ['like',$param['wd'].'%'];
+//            $where['vod_name|vod_actor|vod_sub'] = ['like','%'.$param['wd'].'%'];
         }
         if(!empty($param['player'])){
             if($param['player']=='no'){
