@@ -40,18 +40,26 @@ class All extends Controller
 
     protected function label_fetch($tpl,$loadcache=1,$type='html')
     {
+        var_dump("---------------------",time());
+
         if($loadcache==1){
             $this->load_page_cache($tpl,$type);
         }
 
         $html = $this->fetch($tpl);
+        var_dump("---------------------",time());
+
         if($GLOBALS['config']['app']['compress'] == 1){
             $html = mac_compress_html($html);
         }
+        var_dump("---------------------",time());
+
         if(defined('ENTRANCE') && ENTRANCE == 'index' && $GLOBALS['config']['app']['cache_page'] ==1  && $GLOBALS['config']['app']['cache_time_page'] ){
             $cach_name = $_SERVER['HTTP_HOST']. '_'. MAC_MOB . '_'. $GLOBALS['config']['app']['cache_flag']. '_' . $tpl .'_'. http_build_query(mac_param_url());
             $res = Cache::set($cach_name,$html,$GLOBALS['config']['app']['cache_time_page']);
         }
+        var_dump("---------------------",time());
+
         return $html;
     }
 
