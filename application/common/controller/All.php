@@ -46,23 +46,27 @@ class All extends Controller
     {
 
         if($loadcache==1){
-            var_dump("---------------------",$tpl,$type,time());
+            var_dump("---------------------1",$tpl,$type,time());
 
             $this->load_page_cache($tpl,$type);
-            var_dump("---------------------",$tpl,$type,time());
+            var_dump("---------------------2",$tpl,$type,time());
 
         }
 
         $html = $this->fetch($tpl);
+        var_dump("---------------------4",$tpl,$type,time());
+
 
         if($GLOBALS['config']['app']['compress'] == 1){
             $html = mac_compress_html($html);
         }
+        var_dump("---------------------5",$tpl,$type,time());
 
         if(defined('ENTRANCE') && ENTRANCE == 'index' && $GLOBALS['config']['app']['cache_page'] ==1  && $GLOBALS['config']['app']['cache_time_page'] ){
             $cach_name = $_SERVER['HTTP_HOST']. '_'. MAC_MOB . '_'. $GLOBALS['config']['app']['cache_flag']. '_' . $tpl .'_'. http_build_query(mac_param_url());
             $res = Cache::set($cach_name,$html,$GLOBALS['config']['app']['cache_time_page']);
         }
+        var_dump("---------------------6",$tpl,$type,time());
 
         return $html;
     }
