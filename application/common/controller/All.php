@@ -23,9 +23,15 @@ class All extends Controller
 
     protected function load_page_cache($tpl,$type='html')
     {
+        var_dump("---------------------",$tpl,$type,time());
+
         if(defined('ENTRANCE') && ENTRANCE == 'index' && $GLOBALS['config']['app']['cache_page'] ==1  && $GLOBALS['config']['app']['cache_time_page'] ) {
             $cach_name = $_SERVER['HTTP_HOST']. '_'. MAC_MOB . '_'. $GLOBALS['config']['app']['cache_flag']. '_' .$tpl .'_'. http_build_query(mac_param_url());
+            var_dump("---------------------",$tpl,$type,time());
+
             $res = Cache::get($cach_name);
+            var_dump("---------------------",$tpl,$type,time());
+
             if ($res) {
                 // 修复后台开启页面缓存时，模板json请求解析问题
                 // https://github.com/magicblack/maccms10/issues/965
@@ -42,15 +48,10 @@ class All extends Controller
     {
 
         if($loadcache==1){
-            var_dump("---------------------",$tpl,time());
-
             $this->load_page_cache($tpl,$type);
-            var_dump("---------------------",$tpl,time());
-
         }
 
         $html = $this->fetch($tpl);
-        var_dump("---------------------",$tpl,time());
 
         if($GLOBALS['config']['app']['compress'] == 1){
             $html = mac_compress_html($html);
@@ -60,7 +61,6 @@ class All extends Controller
             $cach_name = $_SERVER['HTTP_HOST']. '_'. MAC_MOB . '_'. $GLOBALS['config']['app']['cache_flag']. '_' . $tpl .'_'. http_build_query(mac_param_url());
             $res = Cache::set($cach_name,$html,$GLOBALS['config']['app']['cache_time_page']);
         }
-        var_dump("---------------------",time());
 
         return $html;
     }
