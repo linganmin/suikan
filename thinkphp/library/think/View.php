@@ -147,12 +147,17 @@ class View
      */
     public function fetch($template = '', $vars = [], $replace = [], $config = [], $renderContent = false)
     {
+        var_dump("---------------------2",$this->data,time());
+
         // 模板变量
         $vars = array_merge(self::$var, $this->data, $vars);
+        var_dump("---------------------2",$this->data,time());
+
 
         // 页面缓存
         ob_start();
         ob_implicit_flush(0);
+        var_dump("---------------------3",$this->data,time());
 
         // 渲染输出
         try {
@@ -165,9 +170,12 @@ class View
             ob_end_clean();
             throw $e;
         }
+        var_dump("---------------------3",$this->data,time());
 
         // 获取并清空缓存
         $content = ob_get_clean();
+        var_dump("---------------------3",$this->data,time());
+
         // 内容过滤标签
         Hook::listen('view_filter', $content);
         return $content;
