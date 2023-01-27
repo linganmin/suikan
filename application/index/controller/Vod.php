@@ -38,6 +38,7 @@ class Vod extends Base
     public function search()
     {
         $param = mac_param_url();
+        var_dump($param);
         $this->check_search($param);
         $this->label_search($param);
         return $this->label_fetch('vod/search');
