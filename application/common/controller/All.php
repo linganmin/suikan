@@ -58,7 +58,6 @@ class All extends Controller
             $cach_name = $_SERVER['HTTP_HOST']. '_'. MAC_MOB . '_'. $GLOBALS['config']['app']['cache_flag']. '_' . $tpl .'_'. http_build_query(mac_param_url());
             $res = Cache::set($cach_name,$html,$GLOBALS['config']['app']['cache_time_page']);
         }
-        var_dump("---------------------6",$tpl,$type,time());
 
         return $html;
     }
