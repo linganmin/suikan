@@ -41,6 +41,7 @@ class Vod extends Base
         var_dump($param);
         $this->check_search($param);
         $this->label_search($param);
+        var_dump($param);
         return $this->label_fetch('vod/search');
     }
 
