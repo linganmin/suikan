@@ -68,7 +68,8 @@ class Provide extends Base
                 $where['vod_time'] = [['gt', $tommunix], ['lt', $todayunix]];
             }
             if (!empty($this->_param['wd'])) {
-                $where['vod_name'] = ['like', '%' . $this->_param['wd'] . '%'];
+                $where['vod_name'] = ['like',  $this->_param['wd'] . '%'];
+//                $where['vod_name'] = ['like', '%' . $this->_param['wd'] . '%'];
             }
             // 增加年份筛选 https://github.com/magicblack/maccms10/issues/815
             if (!empty($this->_param['year'])) {
@@ -105,7 +106,8 @@ class Provide extends Base
                 if (!empty($vod_play_from_list)) {
                     $where['vod_play_from'] = ['or'];
                     foreach ($vod_play_from_list as $vod_play_from) {
-                        array_unshift($where['vod_play_from'], ['like', '%' . trim($vod_play_from) . '%']);
+//                        array_unshift($where['vod_play_from'], ['like', '%' . trim($vod_play_from) . '%']);
+                        array_unshift($where['vod_play_from'], ['like',  trim($vod_play_from) . '%']);
                     }
                 }
             }

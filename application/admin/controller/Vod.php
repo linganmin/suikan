@@ -67,7 +67,8 @@ class Vod extends Base
             }
         }
         if(!empty($param['weekday'])){
-            $where['vod_weekday'] = ['like','%'.$param['weekday'].'%'];
+//            $where['vod_weekday'] = ['like','%'.$param['weekday'].'%'];
+            $where['vod_weekday'] = ['like',$param['weekday'].'%'];
         }
         if(!empty($param['wd'])){
             $param['wd'] = urldecode($param['wd']);
@@ -80,7 +81,8 @@ class Vod extends Base
                 $where['vod_play_from'] = [['eq', ''], ['eq', 'no'], 'or'];
             }
             else {
-                $where['vod_play_from'] = ['like', '%' . $param['player'] . '%'];
+//                $where['vod_play_from'] = ['like', '%' . $param['player'] . '%'];
+                $where['vod_play_from'] = ['like',  $param['player'] . '%'];
             }
         }
         if(!empty($param['downer'])){
@@ -88,7 +90,8 @@ class Vod extends Base
                 $where['vod_down_from'] = [['eq', ''], ['eq', 'no'], 'or'];
             }
             else {
-                $where['vod_down_from'] = ['like', '%' . $param['downer'] . '%'];
+                $where['vod_down_from'] = ['like', $param['downer'] . '%'];
+//                $where['vod_down_from'] = ['like', '%' . $param['downer'] . '%'];
             }
         }
         if(!empty($param['server'])){
@@ -209,11 +212,13 @@ class Vod extends Base
             }
             if(!empty($param['wd'])){
                 $param['wd'] = htmlspecialchars(urldecode($param['wd']));
-                $where['vod_name'] = ['like','%'.$param['wd'].'%'];
+                $where['vod_name'] = ['like',$param['wd'].'%'];
+//                $where['vod_name'] = ['like','%'.$param['wd'].'%'];
             }
 
             if(!empty($param['weekday'])){
-                $where['vod_weekday'] = ['like','%'.$param['weekday'].'%'];
+                $where['vod_weekday'] = ['like',$param['weekday'].'%'];
+//                $where['vod_weekday'] = ['like','%'.$param['weekday'].'%'];
             }
 
             if(!empty($param['player'])){
@@ -221,7 +226,8 @@ class Vod extends Base
                     $where['vod_play_from'] = [['eq', ''], ['eq', 'no'], 'or'];
                 }
                 else {
-                    $where['vod_play_from'] = ['like', '%' . $param['player'] . '%'];
+                    $where['vod_play_from'] = ['like',  $param['player'] . '%'];
+//                    $where['vod_play_from'] = ['like', '%' . $param['player'] . '%'];
                 }
             }
             if(!empty($param['downer'])){

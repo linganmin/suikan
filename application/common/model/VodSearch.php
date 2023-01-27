@@ -37,7 +37,8 @@ class VodSearch extends Base {
         $search_row = $this->where($where)->field("search_result_ids, search_hit_count")->find();
         if (empty($search_row)) {
             $where_vod = [];
-            $where_vod[$search_field] = ['LIKE', '%' . $search_word . '%'];
+            $where_vod[$search_field] = ['LIKE',  $search_word . '%'];
+//            $where_vod[$search_field] = ['LIKE', '%' . $search_word . '%'];
             $id_list = Db::name('Vod')->where($where_vod)->order("vod_id ASC")->column("vod_id");
             $id_list = is_array($id_list) ? $id_list : [];
             $this->insert([

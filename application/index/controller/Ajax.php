@@ -104,7 +104,8 @@ class Ajax extends Base
             $limit = 20;
         }
         $where = [];
-        $where[$pre.'_name|'.$pre.'_en'] = ['like','%'.$wd.'%'];
+        $where[$pre.'_name|'.$pre.'_en'] = ['like',$wd.'%'];
+//        $where[$pre.'_name|'.$pre.'_en'] = ['like','%'.$wd.'%'];
         $order = $pre.'_id desc';
         $field = $pre.'_id as id,'.$pre.'_name as name,'.$pre.'_en as en,'.$pre.'_pic as pic';
 
