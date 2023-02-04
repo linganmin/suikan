@@ -96,7 +96,7 @@ var _hmt = _hmt || [];
     'extra_var' => '',
     'collect_timespan' => '1',
     'pagesize' => '20',
-    'makesize' => '10',
+    'makesize' => '20',
     'admin_login_verify' => '1',
     'editor' => 'Ueditor',
     'lang' => 'zh-cn',
@@ -270,6 +270,7 @@ var _hmt = _hmt || [];
       'psearea' => '1',
       'pselang' => '1',
       'urlrole' => '1',
+      'inrule' => ',b',
       'uprule' => ',a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w',
       'filter' => '色戒,色即是空',
       'namewords' => '第1季=第一季#第2季=第二季#第3季=第三季#第4季=第四季',
@@ -278,7 +279,6 @@ var _hmt = _hmt || [];
       'areawords' => '',
       'langwords' => '',
       'words' => 'aaa#bbb#ccc#ddd#eee',
-      'inrule' => ',a',
     ),
     'art' => 
     array (
