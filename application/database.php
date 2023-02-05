@@ -12,13 +12,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '172.31.59.175',
+    'hostname'        => 'db1.c8oezuppwzpn.us-east-1.rds.amazonaws.com',
     // 数据库名
     'database'        => 'videos',
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => 'saboran',
+    'password'        => 'linganmin2016',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
